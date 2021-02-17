@@ -79,6 +79,7 @@
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Software Developer.</h3><br>
+            
             <!-- <p class="font-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
