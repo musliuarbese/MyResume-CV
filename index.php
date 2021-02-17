@@ -70,7 +70,17 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>Hard worker, detailed-oriented, responsible, ambitious, team worker, friendly, communicative type, humble, decisive.</p>
+          <?php 
+          $select = 'SELECT aboutMe, title, birthday, website, phone, city, age, degree, email, description FROM `about`';
+	        $result = mysqli_query($conn,$select) or die ('invalid query:'. mysqli_error());
+
+          if($result){
+            foreach($result as $row){
+
+	?>
+	<!-- while($row = mysqli_fetch_row($result))
+	{ -->
+          <p><?php echo $row['aboutMe']; ?></p>
         </div>
 
         <div class="row">
@@ -78,7 +88,7 @@
             <img src="assets/img/myphoto.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Software Developer.</h3><br>
+            <h3><?php echo $row['title']; ?></h3><br>
             
             <!-- <p class="font-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -87,24 +97,27 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>20 November 2020</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.myresume.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+383 49 480 212</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Viti, Kosovo</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span><?php echo $row['birthday']; ?></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><?php echo $row['website']; ?></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><?php echo $row['phone']; ?></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span><?php echo $row['city']; ?></span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Personal Email:</strong> <span>musliuarbese@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span><?php echo $row['age']; ?></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span><?php echo $row['degree']; ?></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Personal Email:</strong> <span><?php echo $row['email']; ?></span></li>
                   </ul>
               </div>
-            </div>
+            </div><br><br><br>
             <p>
-              I enjoy being challenged and engaging with projects that require me to work outside my comfort and knowledge set as continuing to learn new languages and development techniques are important to me and the success of your organization. I am responsible, very determined, honest, hardworking, and a fast learner person. I am confident in my self for taking on new challenges and responsibilities. Lastly, I am a very smiley and compassionate person. I have a logical mind but understand and feel emotions as well. 
-            </p>
+            <?php echo $row['description']; ?></p>
           </div>
+          <?php
+        }
+          }else echo "No data found";
+          ?>
         </div>
 
       </div>
