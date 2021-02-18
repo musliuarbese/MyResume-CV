@@ -26,7 +26,7 @@ class skillsContainer
        
       
         <div class="col-lg-8 mt-5 mt-lg-0">
-<form action="editSkills.php" method="post" onSubmit="" role="form"  style="margin-top: 200px; margin-left: 480px; margin-bottom: 100px">
+          <form action="editSkills.php" method="post" onSubmit="" role="form"  style="margin-top: 200px; margin-left: 480px; margin-bottom: 100px">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="teknologjia" class="formm-control" id="teknologjia" placeholder="Your Technology" value=<?php echo $teknologjia; ?> required>
@@ -40,7 +40,7 @@ class skillsContainer
               <button type="submit" name="edit" class="butt" style="width: 100px !important; margin-left:50px; margin-right:50px ">Update</button>
               <button type="submit" name="delete" class="butt" style="width: 100px !important; ">Delete</button>
 
-</form>
+         </form>
 </div>
  <?php }
      

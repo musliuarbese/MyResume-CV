@@ -36,50 +36,53 @@ class aboutContainer
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" style="width: 600px !important;" name="aboutMe" class="formm-control" id="aboutMe" value=<?php echo $aboutMe; ?> required>
-                  <br></div> 
+                 </div> 
                   </div>
                   <div class="row">
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="text" style="width: 600px !important;" class="formm-control" name="title" id="title"  value=<?php echo $title ?> required>
-                <br>
+               
               </div>
               </div>
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" style="width: 600px !important;" name="birthday" class="formm-control" id="birthday"  value=<?php echo $birthday; ?> required>
                 </div>
+      </div>
                 <div class="row">
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                 <br> <input type="text" style="width: 600px !important;" class="formm-control" name="website" id="website" value=<?php echo $website ?> required>
+                  <input type="text" style="width: 600px !important;" class="formm-control" name="website" id="website" value=<?php echo $website ?> required>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 form-group">
-                 <br> <input type="text" style="width: 600px !important;" name="phone" class="formm-control" id="phone"  value=<?php echo $phone; ?> required>
+                <input type="text" style="width: 600px !important;" name="phone" class="formm-control" id="phone"  value=<?php echo $phone; ?> required>
                 </div>
+      </div>
                 <div class="row">
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <br><input type="text" style="width: 600px !important;" class="formm-control" name="city" id="city" value=<?php echo $city ?> required>
+                 <input type="text" style="width: 600px !important;" class="formm-control" name="city" id="city" value=<?php echo $city ?> required>
                 </div>
                 </div>
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <br><input type="text" style="width: 600px !important;" name="age" class="formm-control" id="age"  value=<?php echo $age; ?> required>
+                  <input type="text" style="width: 600px !important;" name="age" class="formm-control" id="age"  value=<?php echo $age; ?> required>
                 </div>
+      </div>
                 <div class="row">
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <br><input type="text" style="width: 600px !important;" class="formm-control" name="degree" id="degree" value=<?php echo $degree ?> required>
+                  <input type="text" style="width: 600px !important;" class="formm-control" name="degree" id="degree" value=<?php echo $degree ?> required>
                 </div>
                 </div>
             
               <div class="row">
                 <div class="col-md-6 form-group">
-                 <br> <input type="text" style="width: 600px !important;" name="email" class="formm-control" id="email"  value=<?php echo $email; ?> required>
+                 <input type="text" style="width: 600px !important;" name="email" class="formm-control" id="email"  value=<?php echo $email; ?> required>
                 </div>
                 </div>
                 <div class="row">
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <br><input type="text" style="width: 600px !important;" class="formm-control" name="description" id="description" value=<?php echo $description ?> required>
+                  <input type="text" style="width: 600px !important;" class="formm-control" name="description" id="description" value=<?php echo $description ?> required>
                 </div>
               </div>
               <br>

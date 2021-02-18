@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>My Resume</title>
+  <title>User Contacts</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -43,7 +43,7 @@ $contact = new contactContainer;
   ?>
  <header id="header" class="d-flex flex-column justify-content-center">
     <nav>
-        <a href="#" class="logo"><img src="../assets/img/icona.png"/>Arbesa's Resume</a>
+        <a href="../index.php" class="logo"><img src="../assets/img/icona.png"/>Arbesa's Resume</a>
         <ul class="menu">
             <li><a href="#hero" class="nav-link scrollto active">Home</a></li>
             <li><a href="#about" class="nav-link scrollto">About</a></li>
@@ -54,6 +54,8 @@ $contact = new contactContainer;
     </nav>
     </header>
 <h2 style="color: red; margin-top:100px; text-align:center">User Contacts </h2>
+<h6 style="text-align:center; margin-top:30px" >Or go back to Home Page --> <a href="../index.php">Back</a></h6>    
+
       
 <?php 
   if(isset($_POST))

@@ -11,7 +11,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>My Resume</title>
+  <title>Arbesa's Resume</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -171,8 +171,35 @@
           <h2>Skills</h2>
           <p>I have a big passion in IT field, so those are my knowledges about programming languages.</p>
         </div>
-
-        <div class="row skills-content">
+        <div class="resume-item pb-0" style="float:right; margin-right:50px; margin-top:50px">
+        <h4>Soft Skills</h4>
+        <ul>
+          <li>Excellent Communication skills</li>
+          <li>Strong communication skills and costumer relation abilities</li>
+          <li>Work Ethic</li>
+          <li>Flexibility/Adaptability</li>
+          <li>Problem solving</li>
+          <li>Team work</li>
+          <li>Leadership abilities</li>
+          <li>Ability to work under pressure</li>
+          <li>Fast learner</li>
+        </ul>
+        <div style="margin-top:60px">
+        <h4>Hobbies:</h4>
+        <ul>
+          <li>Sports,</li>
+          <li>Movies,</li>
+          <li>Learning new things,</li>
+          <li>Travel,</li>
+          <li>Nature</li>
+          
+        </ul>
+        </div>
+      </div>
+      <br><br>
+      
+        <div class="row skills-content" >
+        
         <div class="col-lg-6">
        
           <?php
@@ -187,70 +214,17 @@
 	      foreach($result as $row)
 	     {
 		?>
+    
 
-
-
-            <div class="progress" style="flex-direction: row;">
+            <div class="progress">
               <span class="skill" style="flex-direction: row;"><?php echo $row['teknologjia']; ?><i class="val">	
-               <?php echo $row['perqindja'];?></i></span>
-              <div class="progress-bar-wrap" style="flex-direction: row;">
-                <div class="progress-bar" style="flex-direction: row;" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div> 
-
-            <!-- <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+               <?php echo $perqindja=$row['perqindja']; ?>%</i></span>
+              <div class="progress-bar-wrap" >
+                <div class="progress-bar" role="progressbar" aria-valuenow="<?php echo $perqindja; ?>" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div> 
             
 
-            <div class="progress">
-              <span class="skill">CSS <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-           
-          </div>
-          
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">React Js, Redux, React Hooks<i class="val">73%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Node JS <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Java <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div> -->
     <?php
           }
       }
@@ -261,26 +235,12 @@
    ?>
 
           </div>
+          
 
         </div>
-
+        
       </div>
-     <br><br>
-      <div class="resume-item pb-0">
-        <h4>Soft Skills</h4>
-        <ul>
-          <li>Excellent Communication skills</li>
-          <li>Strong communication skills and costumer relation abilities</li>
-          <li>Work Ethic</li>
-          <li>Flexibility/Adaptability</li>
-          <li>Problem solving</li>
-          <li>Team work</li>
-          <li>Leadership abilities</li>
-          <li>Ability to work under pressure</li>
-          <li>Fast learner</li>
-        </ul>
-      </div>
-      <h4>Hobbies:</h4> <p> Sports, Movies, Learning new things, Travel, Nature</p>
+     
       
     </section><!-- End Skills Section -->
 
@@ -507,7 +467,7 @@ Feel free to look at the projects I have worked on.</p>
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
-                </div>
+                
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
