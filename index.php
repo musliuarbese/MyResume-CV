@@ -29,7 +29,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">/
   <!-- =======================================================
@@ -132,15 +132,7 @@
           <p>Some of my facts that rate my work during my studies, trainings, selfworks</p>
         </div>
 
-        <div class="row">
-
-          <!-- <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Happy Clients</p>
-            </div>
-          </div> -->
+        <div class="row" style="margin-left: 160px;">
 
           <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div class="count-box">
@@ -154,7 +146,7 @@
             <div class="count-box">
               <i class="bi bi-headset"></i>
               <span data-purecounter-start="0" data-purecounter-end="365" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
+              <p>Hours Of Work</p>
             </div>
           </div>
 
@@ -180,11 +172,9 @@
           <p>I have a big passion in IT field, so those are my knowledges about programming languages.</p>
         </div>
 
-
-
         <div class="row skills-content">
-
-          <div class="col-lg-6">
+        <div class="col-lg-6">
+       
           <?php
       
 	$select = 'SELECT * FROM `skills`';
@@ -198,11 +188,13 @@
 	     {
 		?>
 
-            <div class="progress">
-              <span class="skill"><?php echo $row['teknologjia']; ?><i class="val">	
+
+
+            <div class="progress" style="flex-direction: row;">
+              <span class="skill" style="flex-direction: row;"><?php echo $row['teknologjia']; ?><i class="val">	
                <?php echo $row['perqindja'];?></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar-wrap" style="flex-direction: row;">
+                <div class="progress-bar" style="flex-direction: row;" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div> 
 
@@ -466,10 +458,16 @@ Feel free to look at the projects I have worked on.</p>
               </div>
             </div>
           </div>
+          
         </div>
 
       </div>
-    </section>
+      <div class="anexes">
+      <h5>For more details. Please visit my anexes:</h5>
+      <p>Github Link: <a href = "https://github.com/musliuarbese" target="_blank">Click Here</a>,</p>
+      <p> LinkedIn:   <a href = "https://www.linkedin.com/in/arbesemusliu/" target="_blank">Click Here</a></p>
+    </div>
+      </section>
     
     
     
@@ -509,10 +507,11 @@ Feel free to look at the projects I have worked on.</p>
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
+                </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
-              </div>
+             
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
@@ -525,6 +524,7 @@ Feel free to look at the projects I have worked on.</p>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div> -->
               <div class="text-center"><button type="submit" class="butonijem">Send Message</button></div>
+              </div>
             </form>
 
           </div>

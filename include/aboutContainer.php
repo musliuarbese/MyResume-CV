@@ -32,65 +32,59 @@ class aboutContainer
         ?>
         
         <div class="col-lg-8 mt-5 mt-lg-0">
-<form action="editAbout.php" method="post" onSubmit="" role="form"  style="width: 200%; margin-top: 100px; margin-left:100px; margin-bottom: 100px">
+<form action="editAbout.php" method="post" onSubmit="" role="form"  style="width: 200%; margin-top: 100px; margin-left:400px; margin-bottom: 100px">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="aboutMe" class="form-control" id="aboutMe" value=<?php echo $aboutMe; ?> required>
+                  <input type="text" style="width: 600px !important;" name="aboutMe" class="formm-control" id="aboutMe" value=<?php echo $aboutMe; ?> required>
                   <br></div> 
                   </div>
                   <div class="row">
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="text" class="form-control" name="title" id="title"  value=<?php echo $title ?> required>
+                  <input type="text" style="width: 600px !important;" class="formm-control" name="title" id="title"  value=<?php echo $title ?> required>
                 <br>
               </div>
               </div>
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="birthday" class="form-control" id="birthday"  value=<?php echo $birthday; ?> required>
+                  <input type="text" style="width: 600px !important;" name="birthday" class="formm-control" id="birthday"  value=<?php echo $birthday; ?> required>
                 </div>
                 <div class="row">
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                 <br> <input type="text" class="form-control" name="website" id="website" value=<?php echo $website ?> required>
+                 <br> <input type="text" style="width: 600px !important;" class="formm-control" name="website" id="website" value=<?php echo $website ?> required>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 form-group">
-                 <br> <input type="text" name="phone" class="form-control" id="phone"  value=<?php echo $phone; ?> required>
+                 <br> <input type="text" style="width: 600px !important;" name="phone" class="formm-control" id="phone"  value=<?php echo $phone; ?> required>
                 </div>
                 <div class="row">
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <br><input type="text" class="form-control" name="city" id="city" value=<?php echo $city ?> required>
+                  <br><input type="text" style="width: 600px !important;" class="formm-control" name="city" id="city" value=<?php echo $city ?> required>
                 </div>
                 </div>
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <br><input type="text" name="age" class="form-control" id="age"  value=<?php echo $age; ?> required>
+                  <br><input type="text" style="width: 600px !important;" name="age" class="formm-control" id="age"  value=<?php echo $age; ?> required>
                 </div>
                 <div class="row">
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <br><input type="text" class="form-control" name="degree" id="degree" value=<?php echo $degree ?> required>
+                  <br><input type="text" style="width: 600px !important;" class="formm-control" name="degree" id="degree" value=<?php echo $degree ?> required>
                 </div>
                 </div>
             
               <div class="row">
                 <div class="col-md-6 form-group">
-                 <br> <input type="text" name="email" class="form-control" id="email"  value=<?php echo $email; ?> required>
+                 <br> <input type="text" style="width: 600px !important;" name="email" class="formm-control" id="email"  value=<?php echo $email; ?> required>
                 </div>
                 </div>
                 <div class="row">
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <br><input type="text" class="form-control" name="description" id="description" value=<?php echo $description ?> required>
+                  <br><input type="text" style="width: 600px !important;" class="formm-control" name="description" id="description" value=<?php echo $description ?> required>
                 </div>
               </div>
               <br>
-              <!-- <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div> -->
-              <br><div class="text-center"><button type="submit" name="edit" class="butonijem" style="width: 200px !important;  float:left">Update Skill</button></div>
-              <div class="text-center"><button type="submit" name="delete" class="butonijem" style="width: 200px !important; ">Delete Skill</button></div>
-              
+              <button type="submit" name="edit" class="butt" style="width: 150px !important; margin-left:120px; margin-right:50px ">Update</button>
+              <button type="submit" name="delete" class="butt" style="width: 150px !important; ">Delete</button>
 </form>
 </div>
  <?php }

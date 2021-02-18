@@ -24,17 +24,45 @@ class contactContainer
         $subject =$row['subject'];
         $message =$row['message'];
         ?>
-        
-        <div class="col-lg-8 mt-5 mt-lg-0" style = "margin-left: 300px;">
-       
-            <h3 style="margin-top: 200px"><?php echo $name ?></h3><br>
-            <h4><?php echo $email?> </h4><br>
-            <h3><?php echo $subject ?></h3><br>
-            <h4><?php echo $message ?></h4><br>
-            
-              <br><div class="text-center"><button onSubmit="deleteContact.php" type="submit" name="delete" class="butonijem" style="width: 120px !important; margin-left: 300px;  float:left" >Delete Skill</button></div>
 
+        <section>
+      
+        <!-- <div class="col-lg-8 mt-5 mt-lg-0"> -->
+        
+<form action="deleteContact.php" method="post" onSubmit="" role="form"  style="width: 200%; margin-top: 50px; margin-left:300px; margin-bottom: 100px">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label class="teksti">User:</label>
+                  <input style="width: 600px !important;" type="text" name="name" class="formm-control"  value=<?php echo $name; ?> required>
+                 </div> 
+                  </div>
+                  <div class="row">
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <label class="teksti">User Mail:</label>
+                  <input style="width: 600px !important;" type="email" class="formm-control" name="email"   value=<?php echo $email ?> required>
+                
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                <label class="teksti">Subject:</label>
+                  <input style="width: 600px !important;" type="text" name="subject" class="formm-control"  value=<?php echo $subject; ?> required>
+                </div>
+      </div>
+                <div class="row">
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <label class="teksti">Message:</label>
+                 <input style="width: 600px !important;" type="text" class="formm-control" name="message" id="website" value=<?php echo $message ?> required>
+                </div>
+      </div>
+              
+              <br>
+             
+              <button type="submit" name="delete" class="butt" style="width: 200px !important; margin-left:500px ">Delete</button>
+              
+</form>
 </div>
+      </section>
  <?php }
      
   }
